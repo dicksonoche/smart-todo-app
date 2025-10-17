@@ -1,0 +1,31 @@
+[project]
+name = "dataepic-intermediate"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Simon Dickson"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "python-dateutil (>=2.9.0.post0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=8.4.2,<9.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)",
+    "black (>=25.9.0,<26.0.0)",
+    "flake8 (>=7.3.0,<8.0.0)",
+    "mypy (>=1.18.2,<2.0.0)"
+]
+
+[tool.poetry]
+# This project is not packaged as a single importable distribution.
+# Enable dependency-management-only mode to avoid installing a non-existent package.
+package-mode = false
