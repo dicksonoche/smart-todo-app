@@ -100,10 +100,6 @@ poetry run pytest --cov=src --cov-report=term-missing --cov-fail-under=90 -q
 - Packages include `__init__.py` to support module discovery and packaging.
 
 ## Example Usage Scenarios
-## Troubleshooting
-
-- urllib3 NotOpenSSLWarning: Your system Python may be linked to LibreSSL. Use Poetry with Python 3.14 built against OpenSSL (pyenv), or suppress via `PYTHONWARNINGS="ignore::urllib3.exceptions.NotOpenSSLWarning"`.
-- Interactive REPL not starting: Ensure you run `python -m src.main` (module mode) so package-relative imports resolve.
 
 
 Add tasks with smart parsing
